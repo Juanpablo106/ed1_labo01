@@ -26,11 +26,19 @@ public class SortingTester<T extends Comparable<T>> {
             durations.add(Duration.between(start, end));
         }
 
+        double sum = durations.stream()
+                .mapToLong(Duration::toMillis)
+                .sum();
+
         double average = durations.stream()
                 .mapToLong(Duration::toMillis)
                 .average()
                 .orElse(0);
 
+        double division = sum / average;
+
+        System.out.printf("\t\tSumatoria de tiempos: %s ms\n", sum);
         System.out.printf("\t\tTiempo promedio: %s ms\n", average);
+        System.out.printf("\t\tTiempo division: %s ms\n", division);
     }
 }

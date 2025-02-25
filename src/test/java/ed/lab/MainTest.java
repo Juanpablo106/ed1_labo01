@@ -39,7 +39,7 @@ class MainTest {
 
         for (int i = 1; i < array.length; i++) {
             assertThat(array[i]).isNotNull();
- 
+
             assertThat(array[i])
                     .isNotNull()
                     .isLessThanOrEqualTo(array[i - 1]);

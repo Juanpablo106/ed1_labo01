@@ -23,7 +23,7 @@ public class    Main {
     private static final QuickSort<Integer> randomPivotQuickSort = SortingAlgorithms::randomPivotQuickSort; // Reemplácelo por una referencia a un método
 
     public static QuickSort<Integer> getHighPivotQuickSort() {
-        return highPivotQuickSort;
+        return highPivotQuickSort; 
     }
 
     public static QuickSort<Integer> getLowPivotQuickSort() {

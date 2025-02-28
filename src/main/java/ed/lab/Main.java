@@ -1,17 +1,17 @@
 package ed.lab;
 
 public class    Main {
-    private static final ArrayGenerator<Integer> sortedArrayGenerator = (int x) -> new Integer[]
+    private static final ArrayGenerator<Integer> sortedArrayGenerator = (int length) -> new Integer[]
             {
                     1, 2, 3, 4, 5, 6, 7, 8, 9, 10
             };// Reemplácelo por una función lambda
 
-    private static final ArrayGenerator<Integer> invertedArrayGenerator = (int x) -> new Integer[]
+    private static final ArrayGenerator<Integer> invertedArrayGenerator = (int length) -> new Integer[]
             {
                     10, 9, 8, 7, 6, 5, 4, 3, 2, 1
             };// Reemplácelo por una función lambda
 
-    private static final ArrayGenerator<Integer> randomArrayGenerator = (int x) -> new Integer[]
+    private static final ArrayGenerator<Integer> randomArrayGenerator = (int length) -> new Integer[]
             {
                     4, 6, 9, 1, 3, 5, 7, 8, 2, 10
             };// Reemplácelo por una función lambda

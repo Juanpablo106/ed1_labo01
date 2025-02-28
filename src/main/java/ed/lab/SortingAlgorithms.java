@@ -5,17 +5,17 @@ public class SortingAlgorithms {
 
     private static final Random random = new Random(); // Para pivote aleatorio
 
-    // 🔹 QuickSort con el último elemento como pivote
+    //  QuickSort con el último elemento como pivote
     public static <T extends Comparable<T>> void highPivotQuickSort(T[] array) {
         quickSort(array, 0, array.length - 1, "high");
     }
 
-    // 🔹 QuickSort con el primer elemento como pivote
+    //  QuickSort con el primer elemento como pivote
     public static <T extends Comparable<T>> void lowPivotQuickSort(T[] array) {
         quickSort(array, 0, array.length - 1, "low");
     }
 
-    // 🔹 QuickSort con un pivote aleatorio
+    //  QuickSort con un pivote aleatorio
     public static <T extends Comparable<T>> void randomPivotQuickSort(T[] array) {
         quickSort(array, 0, array.length - 1, "random");
     }

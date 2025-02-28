@@ -50,7 +50,7 @@ public class    Main {
         final SortingTester<Integer> tester = new SortingTester<>();
 
         System.out.println("Ordenando un arreglo ordenado:");
-        System.out.println("\tUtilizando el último elemento como pivote: ");
+        System.out.println("\tUtilizando el último elemento como pivote:  ");
         tester.testSorting(sortedArrayGenerator, highPivotQuickSort);
         System.out.println("\tUtilizando el primer elemento como pivote: ");
         tester.testSorting(sortedArrayGenerator, lowPivotQuickSort);
